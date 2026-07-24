@@ -1,8 +1,8 @@
-function Header({ name, age }) {
+function Header() {
     return (
         <div>
-            <h1>halo {name} Ini adalah component Header</h1>
-            <p>Umur saya {age} tahun.</p>
+            <h1>halo Ini adalah component Header</h1>
+            <p>Component adalah unit-unit kecil yang dapat digunakan kembali dalam aplikasi React.</p>
         </div>
     );
 }
