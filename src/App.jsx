@@ -1,16 +1,22 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
 import './App.css'
+import Header from './component/Header';
+
+function Welcome(props) {
+  return (
+    <h1>Hallo, {props.name}</h1>
+  )
+}
 
 function App() {
-  const [count, setCount] = useState(0)
   const name = "fadhilah Yuda Pratama";
   return (
     <div>
+      <Header />
       <h1>Hello {name}</h1>
       <p>Belajar JSX itu menyenangkan!</p>
+
+      <Welcome name="Fadhilah Yuda Pratama" />
+      <p>Ini halaman utama</p>
     </div>
   )
 }
