@@ -1,7 +1,7 @@
 // import './App.css'
 import Welcome from './component/Welcome';
 import Header from './component/Header';
-import Biodata from './component/Biodata';
+import Profil from './component/Profil';
 
 function App() {
   const name = "fadhilah Yuda Pratama";
@@ -20,7 +20,7 @@ function App() {
       <br />
       <hr />
       
-      <Biodata nama="Fadhilah Yuda Pratama" umur={30} alamat="Jakarta" />
+      <Profil name="Fadhilah Yuda Pratama" age={30} location="Jakarta" email="fadhilahyudapratama@example.com" description="Seorang developer yang senang belajar teknologi baru." available={true} socialMedia={{ twitter: "@fadhilahyuda", linkedin: "fadhilahyudapratama" }}  />
       <br />
       <br />
       <br />
