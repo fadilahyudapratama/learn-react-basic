@@ -1,7 +1,7 @@
 function Profil({ name, age, location, email, description, available, socialMedia }) {
     return (
         <div>
-            <h1>Belajar Props Terkait Profil</h1>
+            <h2>Belajar Props Terkait Profil</h2>
             <small>Profil adalah informasi pribadi seseorang yang mencakup nama, umur, alamat, dan data lainnya.</small>
             <p>Nama: {name}</p>
             <p>Umur: {age}</p>

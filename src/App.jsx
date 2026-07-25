@@ -4,41 +4,32 @@ import Header from './component/Header';
 import Profil from './component/Profil';
 import Counter from './component/Counter';
 import Eventhandling from './component/Eventhandling';
+import Section from './component/Section';
 
 function App() {
   const name = "fadhilah Yuda Pratama";
+
   return (
     <div>
-      <h1>Belajar JSX itu menyenangkan!</h1>
-      <small>JSX adalah singkatan dari JavaScript XML. JSX adalah ekstensi sintaks untuk JavaScript. JSX memungkinkan kita untuk menulis HTML di dalam React.</small>
-    <br />
-    <br />
-    <br />
-    <hr />
-
-      <Header />
-      <br />
-      <br />
-      <br />
-      <hr />
-      
-      <Profil name="Fadhilah Yuda Pratama" age={30} location="Jakarta" email="fadhilahyudapratama@example.com" description="Seorang developer yang senang belajar teknologi baru." available={true} socialMedia={{ twitter: "@fadhilahyuda", linkedin: "fadhilahyudapratama" }}  />
-      <br />
-      <br />
-      <br />
-      <hr />
-
-      <Counter />
-      <br />
-      <br />
-      <br />
-      <hr />
-      <Eventhandling />
-      <br />
-      <br />
-      <br />
-      <hr />
-      <Welcome />
+      <Section>
+        <h1>Belajar JSX itu menyenangkan!</h1>
+        <small>JSX adalah singkatan dari JavaScript XML. JSX adalah ekstensi sintaks untuk JavaScript. JSX memungkinkan kita untuk menulis HTML di dalam React.</small>
+      </Section>
+      <Section>
+        <Header />
+      </Section>
+      <Section>
+        <Profil name="Fadhilah Yuda Pratama" age={30} location="Jakarta" email="fadhilahyudapratama@example.com" description="Seorang developer yang senang belajar teknologi baru." available={true} socialMedia={{ twitter: "@fadhilahyuda", linkedin: "fadhilahyudapratama" }}  />
+      </Section>
+      <Section>
+        <Counter />
+      </Section>
+      <Section>
+        <Eventhandling />
+      </Section>
+      <Section>
+        <Welcome />
+      </Section>
     </div>
   )
 }

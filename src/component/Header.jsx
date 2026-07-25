@@ -1,7 +1,7 @@
 function Header() {
     return (
         <div>
-            <h1>halo Ini adalah component Header</h1>
+            <h2>halo Ini adalah component Header</h2>
             <p>Component adalah unit-unit kecil yang dapat digunakan kembali dalam aplikasi React.</p>
         </div>
     );
