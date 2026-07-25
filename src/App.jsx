@@ -2,6 +2,8 @@
 import Welcome from './component/Welcome';
 import Header from './component/Header';
 import Profil from './component/Profil';
+import Counter from './component/Counter';
+import Eventhandling from './component/Eventhandling';
 
 function App() {
   const name = "fadhilah Yuda Pratama";
@@ -21,6 +23,17 @@ function App() {
       <hr />
       
       <Profil name="Fadhilah Yuda Pratama" age={30} location="Jakarta" email="fadhilahyudapratama@example.com" description="Seorang developer yang senang belajar teknologi baru." available={true} socialMedia={{ twitter: "@fadhilahyuda", linkedin: "fadhilahyudapratama" }}  />
+      <br />
+      <br />
+      <br />
+      <hr />
+
+      <Counter />
+      <br />
+      <br />
+      <br />
+      <hr />
+      <Eventhandling />
       <br />
       <br />
       <br />
