@@ -5,6 +5,7 @@ import Profil from './component/Profil';
 import Counter from './component/Counter';
 import Eventhandling from './component/Eventhandling';
 import Section from './component/Section';
+import ConditionalRendering from './component/ConditionalRendering';
 
 function App() {
   const name = "fadhilah Yuda Pratama";
@@ -14,6 +15,9 @@ function App() {
       <Section>
         <h1>Belajar JSX itu menyenangkan!</h1>
         <small>JSX adalah singkatan dari JavaScript XML. JSX adalah ekstensi sintaks untuk JavaScript. JSX memungkinkan kita untuk menulis HTML di dalam React.</small>
+      </Section>
+      <Section>
+        <Welcome />
       </Section>
       <Section>
         <Header />
@@ -28,7 +32,7 @@ function App() {
         <Eventhandling />
       </Section>
       <Section>
-        <Welcome />
+        <ConditionalRendering />
       </Section>
     </div>
   )
