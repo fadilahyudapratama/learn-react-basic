@@ -6,6 +6,8 @@ import Counter from './component/Counter';
 import Eventhandling from './component/Eventhandling';
 import Section from './component/Section';
 import ConditionalRendering from './component/ConditionalRendering';
+import ListKeys from './component/ListKeys';
+// import Form from './component/Form';
 
 function App() {
   const name = "fadhilah Yuda Pratama";
@@ -34,6 +36,12 @@ function App() {
       <Section>
         <ConditionalRendering />
       </Section>
+      <Section>
+        <ListKeys />
+      </Section>
+      {/* <Section>
+        <Form />
+      </Section> */}
     </div>
   )
 }
