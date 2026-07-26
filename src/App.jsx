@@ -8,6 +8,7 @@ import Section from './component/Section';
 import ConditionalRendering from './component/ConditionalRendering';
 import ListKeys from './component/ListKeys';
 import Form from './component/Form';
+import UseEffect from './component/UseEffect';
 
 function App() {
   const name = "fadhilah Yuda Pratama";
@@ -41,6 +42,9 @@ function App() {
       </Section>
       <Section>
         <Form />
+      </Section>
+      <Section>
+        <UseEffect />
       </Section>
     </div>
   )
