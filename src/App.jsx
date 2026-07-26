@@ -9,6 +9,7 @@ import ConditionalRendering from './component/ConditionalRendering';
 import ListKeys from './component/ListKeys';
 import Form from './component/Form';
 import UseEffect from './component/UseEffect';
+import UseRef from './component/UseRef';
 
 function App() {
   const name = "fadhilah Yuda Pratama";
@@ -45,6 +46,9 @@ function App() {
       </Section>
       <Section>
         <UseEffect />
+      </Section>
+      <Section>
+        <UseRef />
       </Section>
     </div>
   )
