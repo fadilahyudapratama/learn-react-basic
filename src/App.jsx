@@ -7,7 +7,7 @@ import Eventhandling from './component/Eventhandling';
 import Section from './component/Section';
 import ConditionalRendering from './component/ConditionalRendering';
 import ListKeys from './component/ListKeys';
-// import Form from './component/Form';
+import Form from './component/Form';
 
 function App() {
   const name = "fadhilah Yuda Pratama";
@@ -39,9 +39,9 @@ function App() {
       <Section>
         <ListKeys />
       </Section>
-      {/* <Section>
+      <Section>
         <Form />
-      </Section> */}
+      </Section>
     </div>
   )
 }
