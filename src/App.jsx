@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import styled from 'styled-components';
+import clsx from 'clsx';
 import './App.css'
 import gaya from "./App.module.css";
 import { ProfileContext } from './component/ProfileContext'
@@ -19,6 +20,10 @@ import useWindowWidth from './hooks/useWindowWidth';
 
 
 function App() {
+  const width = useWindowWidth();
+  const [ isActive, setIsActive] = useState(true);
+  const [active, setActive] = useState(false);
+  const isDark = true;
   const name = "fadhilah Yuda Pratama";
   const [user, setUser] = useState({
     name: "Fadhilah Yuda Pratama",
@@ -32,18 +37,20 @@ function App() {
       linkedin: "fadhilahyudapratama",
     },
   });
-  const width = useWindowWidth();
   const Title = styled.h1`
     color: purple;
     text-decoration: underline;
   `
   return (
     <ProfileContext.Provider value={user}>
-      <div>
+      <div className={`box ${isDark ? "dark" : "light"}`}>
         <Title>Ini Text Berwarna Ungu!</Title>
         <h2 className={gaya.titlev2}>Lebar Jendela { width }</h2>
+        <p className={clsx("title", { active: active, inactive: !active})}>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, aliquid! Quo sequi itaque repellendus maiores numquam earum, tempore voluptatum? Optio.</p>
         <Section>
           <h1 style={{color: "blue", fontSize: "24px" }}>Belajar JSX itu menyenangkan!</h1>
+          <h2 className={isActive ? "active" : "inactive"}>hallo React, Menambahkan CSS Secara Dinamis</h2>
+          <button onClick={() => setIsActive(isActive)}>Toggle Class</button>
           <small className='title'>JSX adalah singkatan dari JavaScript XML. JSX adalah ekstensi sintaks untuk JavaScript. JSX memungkinkan kita untuk menulis HTML di dalam React.</small>
         </Section>
         <Section>

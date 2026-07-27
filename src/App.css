@@ -3,3 +3,26 @@
   font-size: 28px;
   text-align: centerß;
 }
+
+.active {
+  color: greenyellow;
+}
+
+.inactive {
+  color: pink;
+}
+
+.box {
+  padding: 10px;
+  font-weight: bold;
+}
+
+.dark {
+  background: black;
+  color: white;
+}
+
+.light {
+  background: white;
+  color: black;
+}
