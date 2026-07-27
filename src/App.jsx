@@ -1,6 +1,8 @@
 import { useState } from 'react';
+import styled from 'styled-components';
+import './App.css'
+import gaya from "./App.module.css";
 import { ProfileContext } from './component/ProfileContext'
-// import './App.css'
 import Welcome from './component/Welcome';
 import Header from './component/Header';
 import Profil from './component/Profil';
@@ -14,6 +16,7 @@ import UseEffect from './component/UseEffect';
 import UseRef from './component/UseRef';
 import Memoization from './component/Memoization';
 import useWindowWidth from './hooks/useWindowWidth';
+
 
 function App() {
   const name = "fadhilah Yuda Pratama";
@@ -30,13 +33,18 @@ function App() {
     },
   });
   const width = useWindowWidth();
+  const Title = styled.h1`
+    color: purple;
+    text-decoration: underline;
+  `
   return (
     <ProfileContext.Provider value={user}>
       <div>
-        <h2>Lebar Jendela { width }</h2>
+        <Title>Ini Text Berwarna Ungu!</Title>
+        <h2 className={gaya.titlev2}>Lebar Jendela { width }</h2>
         <Section>
-          <h1>Belajar JSX itu menyenangkan!</h1>
-          <small>JSX adalah singkatan dari JavaScript XML. JSX adalah ekstensi sintaks untuk JavaScript. JSX memungkinkan kita untuk menulis HTML di dalam React.</small>
+          <h1 style={{color: "blue", fontSize: "24px" }}>Belajar JSX itu menyenangkan!</h1>
+          <small className='title'>JSX adalah singkatan dari JavaScript XML. JSX adalah ekstensi sintaks untuk JavaScript. JSX memungkinkan kita untuk menulis HTML di dalam React.</small>
         </Section>
         <Section>
           <Welcome />
