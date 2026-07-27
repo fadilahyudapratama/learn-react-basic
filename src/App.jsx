@@ -13,6 +13,7 @@ import Form from './component/Form';
 import UseEffect from './component/UseEffect';
 import UseRef from './component/UseRef';
 import Memoization from './component/Memoization';
+import useWindowWidth from './hooks/useWindowWidth';
 
 function App() {
   const name = "fadhilah Yuda Pratama";
@@ -28,9 +29,11 @@ function App() {
       linkedin: "fadhilahyudapratama",
     },
   });
+  const width = useWindowWidth();
   return (
     <ProfileContext.Provider value={user}>
       <div>
+        <h2>Lebar Jendela { width }</h2>
         <Section>
           <h1>Belajar JSX itu menyenangkan!</h1>
           <small>JSX adalah singkatan dari JavaScript XML. JSX adalah ekstensi sintaks untuk JavaScript. JSX memungkinkan kita untuk menulis HTML di dalam React.</small>
