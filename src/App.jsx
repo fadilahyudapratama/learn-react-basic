@@ -10,6 +10,7 @@ import ListKeys from './component/ListKeys';
 import Form from './component/Form';
 import UseEffect from './component/UseEffect';
 import UseRef from './component/UseRef';
+import Memoization from './component/Memoization';
 
 function App() {
   const name = "fadhilah Yuda Pratama";
@@ -49,6 +50,9 @@ function App() {
       </Section>
       <Section>
         <UseRef />
+      </Section>
+      <Section>
+        <Memoization />
       </Section>
     </div>
   )
